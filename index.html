@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Simple iframe example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <style>
+            section {
+                width: 810px;
+                margin: 0 auto;
+            }
+            h1 {
+                text-align: center;
+            }
+            
+            iframe {
+                max-width: 100%;
+            }
+            
+            .wrap {
+                max-width: 810px;
+            }
+            
+            @media (max-width: 400px) {
+                iframe { min-height: 525px; }
+                .wrap { max-width: 305px; }
+            }
+            @media (min-width: 401px) and (max-width: 495px) {
+                iframe { min-height: 329px; }
+                .wrap { max-width: 380px; }
+            }
+            @media (min-width: 496px) and (max-width: 810px) {
+                iframe { min-height: 235px; }
+                .wrap { max-width: 627px; }
+            }
+            @media (min-width: 811px) {
+                iframe { min-height: 142px; }
+                .wrap { max-width: 810px; }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <section>
+            <header>
+                <h1>Please check out the media queries for precise widths and heights...</h1>
+            </header>
+            <article>
+                <div class="wrap">
+                    <iframe scrolling="no" frameborder="0" src="simple.php" style="width: 810px;" class=""></iframe>
+                </div>
+            </article>
+        </section>
+    </body>
+</html>
